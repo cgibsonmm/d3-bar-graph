@@ -1,0 +1,33 @@
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3{
+  text-align: center;
+}
+
+.graph{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tooltip{
+  padding: 12px;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  background-color: rgba(14, 153, 190, 0.25);
+  box-shadow: 1px 1px 8px 1px rgba(200, 190, 193, 0.50);
+  border-radius: 5%;
+}
+
+.tooltip p{
+  margin: 0;
+}
+
+g .tick line{
+  stroke: rgba(105, 148, 221, 0.50);
+  stroke-dasharray: 7,10;
+}
